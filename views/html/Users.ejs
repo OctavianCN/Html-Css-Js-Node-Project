@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head> 
+      <title>Protejati natura</title>
+      <link rel="shortcut icon" type="image/ico" href="/resurse/img/img/copac.ico">
+      <meta charset="UTF-8">
+      <meta name="description" content="Despre natura si despre cum o putem proteja">
+      <meta name="keywords" content="protejam natura ">
+      <meta name="author" content="Cordescu Octavian-Nicolae">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="/resurse/css/Style1.css">
+    </head>
+    <body>
+        <header>
+             <%- include("../fragments/header") %>
+        </header>
+        <body>
+            <div class="afisaj">
+                <h1>Useri</h1>
+        
+                <table id="UsersTable">
+                  <tr>
+                    <th>ID</th><th>Name</th><th>Username</th>
+                  </tr>
+        
+                  <% for (var i = 0; i < useri.length; i++) { 
+                        %>
+                        <tr>
+                          <td><%= useri[i].id %></td>
+                          <td><%= useri[i].name %></td>
+                          <td><%= useri[i].username %></td>
+                        </tr> 
+           
+                        <% } %>			
+                </table>
+            </div>
+        </body>
+    </body>
+</html>

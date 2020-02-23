@@ -1,0 +1,128 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    overflow: hidden;
+    display: block;  
+    background:black;
+	
+ 
+  }
+  #Feedback{
+    margin-top: 90%;
+  }
+  header{
+    position: relative;
+    z-index: 3;
+    background: #053014;
+     padding-top: 20px;
+     min-height: 70px;
+    border-bottom:#2d8659 3px solid;
+  }
+  .contentNav
+   {
+     position: absolute;
+     z-index: 4;
+     margin-left:15%;
+     width: 70%;
+   }
+    ul.menu>li>a
+    {
+      text-decoration: none;
+      font-size: 20px;
+    }
+    ul.submenu>li>a
+    {
+      text-decoration: none;
+      font-size: 15px;
+    }
+    ul.menu>li
+    {
+      float:left;
+      margin-left: 1px;
+      margin-right: 1px;
+      width: 15%;
+    }
+    ul.menu>li,ul.menu>li>ul.submenu>li
+    {
+      
+      text-align: center;
+      list-style-type:none;
+      display: block;
+      background-color: rgba(65, 7, 7, 0.6);
+      
+      
+    }
+    ul.menu>li>ul.submenu>li
+    {
+      
+      display:none;
+      width:100%;
+      
+      border-top:1px solid black;
+    }
+    ul.menu>li>ul.submenu>li:last-child
+    {
+      /*margin-top:1.2%;*/
+      
+      border-bottom:1px solid rgb(99, 52, 52);
+    }
+    ul.menu>li:hover>ul.submenu>li
+    {
+      display:block;
+    }
+    ul.menu>li:hover,ul.menu>li>ul.submenu>li:hover
+    {
+      background-color: rgb(80, 1, 1);
+    }
+    ul.menu>li>a:hover, ul.submenu>li>a:hover{
+      color: lightblue;
+    }
+    li.current>a
+    {
+      color: rgb(37, 102, 37);
+      font-weight: bold;
+    }
+  #canvas
+  {
+      position: absolute;
+      z-index: 10;
+      margin-left: 20%;
+      margin-top:5%; 
+      border:5px solid rgb(132, 141, 100);
+  }
+  #video
+  {
+      position: absolute;
+      padding: 0;
+     /* margin-left: 10%;
+      margin-top: 5%;*/
+      visibility: hidden;
+  }
+  #dialogue
+  {
+    position: absolute;
+    z-index: 100;
+    width: 800px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 25%;
+    margin-top: 30%;
+    visibility: hidden;
+  }
+  #StoryBeginning
+  {
+    position: absolute;
+    z-index: 11;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(14, 4, 4, 0.5);
+    margin-left: 25%;
+    margin-top: 5%;
+    display: none;
+  }
+  input[type="radio"]{
+    margin: 0 100px 0 100px;
+  }

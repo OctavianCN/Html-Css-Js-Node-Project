@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 id="brand"><span class="highlight">Să Protejăm</span> Natura!</h1>
+      <nav class="contentNav">
+          <ul class="menu" >
+           <li ><a href="index">Acasă</a></li>
+           <li><a>Despre Natură</a>
+             <ul class="submenu">
+                 <li><a href="DeCeTrebuieSaProtejamNatura">De Ce Trebuie Să Protejăm Natura</a></li>
+                 <li><a href="CumPutemProtejaNatura">Cum Putem Proteja Natura</a></li>  
+             </ul>
+           </li>
+           <li><a href="about">Despre Noi</a></li>
+           <% if(!locals.user){ %>
+           <li><a href="login">Login</a></li>
+           <% } %>
+           <% if(locals.user){ %>
+            <li><a href="Users">Users</a></li>
+          <% } %>
+          <% if(locals.user){ %>
+            <li><a href="Game">Game</a></li>
+			    <% } %>
+           <% if(locals.user){ %>
+            <li><a href="logout">Logout</a></li>
+			    <% } %>
+         </ul>
+        </nav> 
+        
+</div>  
+<% if(locals.user){ %>
+  <p class="salut">Esti logat ca,<br/><%= user.username %></p>
+<% } %> 

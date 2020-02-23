@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Protejati natura</title>
+        <link rel="shortcut icon" type="image/ico" href="/resurse/img/img/copac.ico">
+        <meta charset="UTF-8">
+        <meta name="description" content="Despre natura si despre cum o putem proteja">
+        <meta name="keywords" content="protejam natura ">
+        <meta name="author" content="Cordescu Octavian-Nicolae">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="/resurse/css/StyleLogin.css">
+    </head>
+    <body>
+        <header>
+          <%- include("../fragments/header") %>
+          </header>
+        <main>
+        <form method="post">
+          
+            <div class="container">
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="username" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+              <input type="submit" value="Submit">
+            </div>
+
+          </form>
+          <a href="Register">
+            <div class="container">
+                <button  href="Register">Create an account</button>
+            </div>
+         </a>
+        </main>
+        
+    </body>
+</html>

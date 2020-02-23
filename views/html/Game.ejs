@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Protejati natura</title>
+        <link rel="shortcut icon" type="image/ico" href="/resurse/img/img/copac.ico">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Game</title> 
+        <link rel="stylesheet" href="/resurse/css/Game.css">
+    </head>
+    <body> 
+    <header>
+        <%- include("../fragments/header") %>
+    </header>
+    <script src="/resurse/scripts/Main.js"></script>
+    <canvas id=canvas></canvas>
+    <video id="video"  preload="auto" autoplay="true" loop="loop" muted="muted">
+    <source src="/resurse/video/BackgroundMenu.mp4" type="video/mp4">
+    </video>
+    <form id="form">
+        <input type="radio" name="Characters" id="Ch1" value="" checked />
+        <input type="radio" name="Characters" id="Ch2">
+        <input type="radio" name="Characters" id="Ch3">
+    </form>
+    <div id="dialogue"></div>
+    <div id="StoryBeginning"></div>
+    </body>
+    <footer> 
+        <a href="Feedback" id="Feedback">
+        <button type="button">Give Us Feedback</button>
+        </a>
+    </footer>
+</html>

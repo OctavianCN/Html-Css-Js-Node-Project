@@ -1,0 +1,158 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin-top: 10%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+   .highlight{
+    color:#2d8659;
+    font-weight: bold;
+    
+  }
+  #brand
+  {
+    margin: 0;
+    padding: 0;
+    float:left;
+  }
+button {
+  background-color: rgb(10, 83, 13);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+header{
+    position: relative;
+    z-index: 3;
+    background: #1a001a;
+    color: #ffffff;
+     padding-top: 20px;
+     min-height: 70px;
+    border-bottom:#2d8659 3px solid;
+  }
+  
+  .title
+  {
+    color:white; 
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+  }
+button:hover {
+  opacity: 0.8;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  
+}
+header ul
+    {
+      margin: 0;
+      padding: 0;
+    }
+   header a
+   {
+     color:white;
+   }
+   .content
+   {
+    position: relative;
+    z-index: 2;
+   }
+   .contentNav
+   {
+     position: absolute;
+     z-index: 4;
+     margin-top: 2%;
+     margin-left: 30%;
+     width: 70%;
+   }
+    ul.menu>li>a
+    {
+      text-decoration: none;
+      font-size: 20px;
+    }
+    ul.submenu>li>a
+    {
+      text-decoration: none;
+      font-size: 15px;
+    }
+    ul.menu>li
+    {
+      float:left;
+      margin-left: 1px;
+      margin-right: 1px;
+      width: 15%;
+    }
+    ul.menu>li,ul.menu>li>ul.submenu>li
+    {
+      
+      text-align: center;
+      list-style-type:none;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.6);
+      
+      
+    }
+    ul.menu>li>ul.submenu>li
+    {
+      
+      display:none;
+      width:100%;
+      
+      border-top:1px solid black;
+    }
+    ul.menu>li>ul.submenu>li:last-child
+    {
+      /*margin-top:1.2%;*/
+      
+      border-bottom:1px solid black;
+    }
+    ul.menu>li:hover>ul.submenu>li
+    {
+      display:block;
+    }
+    ul.menu>li:hover,ul.menu>li>ul.submenu>li:hover
+    {
+      background-color: rgb(80, 1, 1);
+    }
+    ul.menu>li>a:hover, ul.submenu>li>a:hover{
+      color: lightblue;
+    }
+    li.current>a
+    {
+      color: rgb(37, 102, 37);
+      font-weight: bold;
+    }
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  
+}
