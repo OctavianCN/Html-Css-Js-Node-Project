@@ -61,7 +61,7 @@ app.post('/login', function(req, res) {
     var form = new formidable.IncomingForm();
 	form.parse(req, function(err, fields, files) {
 
-		jsfis=JSON.parse(fs.readFileSync("useri.json"));//aici ce are profa e o functie eu nu am mai scris-o am facut direct
+		jsfis=JSON.parse(fs.readFileSync("useri.json"));
 		var cifru = crypto.createCipher('aes-128-cbc', 'mypassword');//creez un obiect de tip cifru cu algoritmul aes
 		var encrParola= cifru.update(fields.psw, 'utf8', 'hex');//cifrez parola
         encrParola+=cifru.final('hex');//inchid cifrarea (altfel as fi putut adauga text nou cu update ca sa fie cifrat
